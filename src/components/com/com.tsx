@@ -1,10 +1,12 @@
 import React from "react";
-import {Text} from "react-native"
-function Com(){
+import { Text , View} from "react-native"
+function Com() {
     return (
-        <Text>
-            Testedddjkk
-        </Text>
+        <View>
+            <Text>
+                Testedddjkk jndfkjwejklfnweokl
+            </Text>
+        </View>
     )
 }
 export default Com;

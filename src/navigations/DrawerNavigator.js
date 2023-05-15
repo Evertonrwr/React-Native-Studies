@@ -6,8 +6,7 @@ function DrawerNavigator(){
     const Drawer = createDrawerNavigator();
     return(
         <Drawer.Navigator>
-            <Drawer.Screen name="Home" component={HomeNavigator}/>
-
+            <Drawer.Screen name="Home" component={HomeNavigator} options={{headerShown: false}}/>
         </Drawer.Navigator>
     )
 }

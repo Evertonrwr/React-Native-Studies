@@ -1,14 +1,15 @@
 import React from "react";
 import {Text} from "react-native";
 import Com from "../components/com/com";
-const { createNativeStackNavigator } = require("@react-navigation/native-stack");
+import { createStackNavigator } from "@react-navigation/stack";
 
 
 function HomeNavigator(){
-    const HomeStack = createNativeStackNavigator();
+    const HomeStack = createStackNavigator();
     return(
-        <HomeStack.Navigator>
+        <HomeStack.Navigator initialRouteName="Contacts">
             <HomeStack.Screen name="Contacts" component={Com}/>
+            <HomeStack.Screen name="Detalhe" component={Com}/>
         </HomeStack.Navigator>
     )
 }
